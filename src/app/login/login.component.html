@@ -1,0 +1,38 @@
+<div class="container py-5">
+<h2>Login Now</h2>
+
+<div *ngIf="error" class="alert alert-danger ">
+    <h6>{{error}}</h6>
+</div>
+
+<form (ngSubmit)="loginSubmit(loginForm)" [formGroup]="loginForm">
+
+
+
+    <label for="email">Email</label>
+    <input type="email" formControlName='email' class="form-control" id="email">
+    <div *ngIf="loginForm.get('email')?.errors && loginForm.get('email')?.touched "
+        class="alert alert-danger my-2 ">
+        <p *ngIf="loginForm.get('email')?.errors?.['required']" class="mb-0">Email is required</p>
+        <p *ngIf="loginForm.get('email')?.errors?.['email']" class="mb-0">Email invalid</p>
+    </div>
+
+
+    <label for="password">Password</label>
+    <input type="password" formControlName='password' class="form-control" id="password">
+    <div *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.touched "
+        class="alert alert-danger my-2 ">
+        <p *ngIf="loginForm.get('password')?.errors?.['required']" class="mb-0">Password is required</p>
+        <p *ngIf="loginForm.get('password')?.errors?.['pattern']" class="mb-0"> Your Password is invalid as must be
+            start with upper case or short length </p>
+    </div>
+
+
+
+
+    <button [disabled]="loginForm.invalid" type="submit" class="btn btn-info my-3">login</button>
+
+</form>
+
+</div>
+

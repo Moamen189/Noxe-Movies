@@ -1,0 +1,63 @@
+<nav class="d-flex fixed-top  justify-content-between align-items-center p-2">
+    <div class="d-flex">
+        <h3 class="mb-0"><a routerLink="/">Noxe</a></h3>
+        
+        <ul class="list-unstyled mb-0 r ms-4 align-items-center d-flex justify-content-around ">
+            <li>
+                <a *ngIf="isLogin" routerLink="/home" class="mx-2">Home</a>
+            </li>
+        
+            <!-- <li>
+                <a *ngIf="isLogin" routerLink="/about" class="mx-2">About</a>
+            </li> -->
+        
+            <li>
+                <a *ngIf="isLogin" routerLink="/gallary" class="mx-2">People</a>
+            </li>
+        
+            <li>
+                <a *ngIf="isLogin" routerLink="/movies" class="mx-2">Movies</a>
+            </li>
+        
+            <li>
+                <a *ngIf="isLogin" routerLink="/tv" class="mx-2">TV</a>
+            </li>
+        
+            <li>
+                <a *ngIf="isLogin" routerLink="/contacts" class="mx-2">Contacts</a>
+            </li>
+        
+        </ul>
+    </div>
+    <div class="d-flex">
+        <div class="social-media">
+          <a target="_blank" href="https://www.facebook.com/momenashraf.soliman/">  <i class="fab mx-2 fa-facebook"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/moamen-ashraf-mohamed/">  <i class="fab mx-2  fa-linkedin"></i> </a>
+           <a target="_blank" href="https://github.com/Moamen189"> <i class="fab mx-2  fa-github"></i> </a>
+            <!-- <i class="fab mx-2  fa-spotify"></i> -->
+            <!-- <i class="fab mx-2  fa-twitter"></i>
+            <i class="fab mx-2  fa-instagram"></i> -->
+        </div>
+        
+        <ul class="list-unstyled mb-0  d-flex justify-content-around ">
+            <li class="mx-2">
+                <a *ngIf="!isLogin" routerLink="/login">Login</a>
+            </li>
+        
+            <li class="mx-2">
+                <a *ngIf="!isLogin" routerLink="/register">Register</a>
+            </li>
+        
+            <li class="mx-2">
+                <a  (click)="calllogout()" *ngIf="isLogin" routerLink="/">LogOut</a>
+            </li>
+        
+        </ul>
+    </div>
+   
+
+    
+
+
+
+</nav>

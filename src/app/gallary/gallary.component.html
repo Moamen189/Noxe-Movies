@@ -1,0 +1,23 @@
+<!-- <div style="height: 60px;"></div> -->
+<div class="container py-5">
+<div class="row py-4">
+
+    <div class="col-md-4 py-4">
+        <div class="brdr w-25 my-3"></div>
+        <h2>Trending <br /> Person <br /> To Watch Now </h2>
+        <p class="X">Most Watched Person by Days </p>
+        <div class="brdr w-100 my-3"></div>
+    </div>
+    <div *ngFor="let person of trendingPeople" class="col-md-2">
+        <div class="Tv position-relative">
+
+            <img [src]="imagePrefix+person.profile_path " class="w-100">
+
+            <h3 class="h6 fw-bolder my-2">{{person.name}}</h3>
+
+
+
+        </div>
+    </div>
+</div>
+</div>
