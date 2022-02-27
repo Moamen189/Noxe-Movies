@@ -1,0 +1,32 @@
+=================Base URL=============
+https://routeegypt.herokuapp.com/
+---------------Registration API --------------
+https://routeegypt.herokuapp.com/signin
+Method:POST
+Json Format:
+{
+	
+   "email":"ahmed@ahmed.com",
+   "password":"Ahmed@123"
+}
+
+----------All Users Api----------------------
+https://routeegypt.herokuapp.com/getAllUsers
+---------Login API------------------------
+https://routeegypt.herokuapp.com/signup
+Method:Post
+json=
+{
+	"first_name":"muti",
+	"last_name":"muti",
+        "email":"ahmed@ahmed.com",
+        "password":"Ahmed@123"
+}
+--------------LogOut Api-----------------
+https://routeegypt.herokuapp.com/signOut
+Method:POST
+json format 
+{
+	 "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaXRpemVuIjoiY2l0aXplbiIsImlhdCI6MTU5MDc0ODM5NX0.IGyOIV5b9h6-vC6_955wbgL1pLmdu3d0E4cHIqKEXlU"
+}
+
