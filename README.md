@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
+## About
+
+Noxe Movies it's Web Application that offers you the latest movies , TV and popular characters in the world to follow the latest movies to be watched by the user from the viewing sites. This site is produced by Angular 13 and .Net Core 6
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
